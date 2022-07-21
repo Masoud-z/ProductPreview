@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,500&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,500&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+   
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+h2{
+    font-family: "Fraunces" ;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.container{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 534px;
+    border-radius: 15px;
+    transition: linear 0.3s;
+}
+
+
+.img-cover {
+    background-image: url('imgDesc.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 267px 400px;
+    height: 400px;
+    width: 267px;
+    flex-shrink: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.desc{
+    padding: 20px;
+}
+
+.perfume{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.desc h2{
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.desc p{
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+.price{
+    margin: 25px 0;
+    font-family: "Fraunces" ;
+    
+}
+
+
+.active{
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+     
+    margin-right: 20px;
+}
+
+.disable{
+    text-decoration:line-through;
+    color: #999;
+}
+
+
+.btn{
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:570px) {
+    .card{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        height: auto;
+    }
+
+    .img-cover {
+        background-image: url('imgMob.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 375px 262px;
+        height: 262px;
+        width: 375px;
+        flex-shrink: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+
+ 
+}
+
